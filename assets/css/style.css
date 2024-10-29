@@ -137,16 +137,26 @@ h1, h2, h3, h4, h5 , h6 {
 /*======== /Destaque - Var 5 ========*/
 
 @media (max-width: 1199px) {
-    .c-emphasis.var-two .c-box-more-news__column:nth-child(n+3) .c-box-news {
+    .c-emphasis.var-two .c-box-more-news__column:nth-child(n+3) .c-box-news,
+    .c-emphasis.var-five .c-box-more-news--headline,
+    .c-emphasis.var-five .c-box-more-news__column:nth-child(n+4) .c-box-news {
         margin-top: 2rem;
         padding-top: 2rem;
         border-top: 1px solid #d9d9d9;
+    }
+
+    .c-emphasis.var-five .c-box-more-news--headline .c-box-more-news__column:nth-child(n+1) .c-box-news {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
     }
 }
 
 @media (max-width: 991px) {
     .c-box-more-news,
-    .c-emphasis.var-two .c-box-more-news__column:nth-child(n+3) .c-box-news {
+    .c-emphasis.var-five .c-box-more-news--headline,
+    .c-emphasis.var-two .c-box-more-news__column:nth-child(n+3) .c-box-news,
+    .c-emphasis.var-five .c-box-more-news__column:nth-child(n+4) .c-box-news {
         margin-top: 1.5rem;
         padding-top: 1.5rem;
     }
@@ -155,7 +165,11 @@ h1, h2, h3, h4, h5 , h6 {
     .c-box-news__title--related {
         font-size: 1rem;
     }
-    .c-emphasis.var-two .c-box-news__title--headline {
+    .c-emphasis.var-five .c-box-news__title--related {
+        font-size: 0.75rem;
+    }
+    .c-emphasis.var-two .c-box-news__title--headline,
+    .c-emphasis.var-five .c-box-news__title--headline {
         font-size: 2rem;
     }
     .c-box-more-news .c-box-news figure {
@@ -163,11 +177,18 @@ h1, h2, h3, h4, h5 , h6 {
         min-width: 162px;
         height: 93px;
     }
+    .c-emphasis.var-five .c-box-news--headline figure {
+        max-width: 348px;
+        min-width: 348px;
+        height: 241px;
+    }
 }
 
 @media (max-width: 575px) {
     .c-box-more-news,
-    .c-emphasis.var-two .c-box-more-news__column:not(:first-child) .c-box-news {
+    .c-emphasis.var-two .c-box-more-news__column:not(:first-child) .c-box-news,
+    .c-emphasis.var-five .c-box-more-news__column:nth-child(n+3) .c-box-news,
+    .c-emphasis.var-five .c-box-more-news--headline .c-box-more-news__column:nth-child(n+2) .c-box-news {
         margin-top: 1rem;
         padding-top: 1rem;
         border-top: 1px solid #d9d9d9;
