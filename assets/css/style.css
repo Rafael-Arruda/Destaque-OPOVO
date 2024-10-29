@@ -42,6 +42,12 @@ h1, h2, h3, h4, h5 , h6 {
     line-height: 1.2;
     font-weight: 700;
     color: #1e1e1e;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 .c-box-news a:hover .c-box-news__title {
     color: #1B406D;
@@ -53,14 +59,17 @@ h1, h2, h3, h4, h5 , h6 {
 .c-box-news__title--related {
     font-size: 1rem;
     font-weight: 400;
-    display: flex;
-    gap: 0.5rem;
+    position: relative;
+
+    -webkit-line-clamp: 2;
 }
 .c-box-news__title--related::before {
     content: ' ';
     height: 10px;
     min-width: 9px;
-    margin-top: 0.3125rem;
+    position: absolute;
+    top: 5px;
+    left: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
