@@ -160,8 +160,7 @@ h1, h2, h3, h4, h5 , h6 {
     .c-emphasis.var-five .c-box-news__title--related {
         font-size: 0.75rem;
     }
-    .c-emphasis.var-two .c-box-news__title--headline,
-    .c-emphasis.var-five .c-box-news__title--headline {
+    .c-box-news--headline .c-box-news__title.c-box-news__title--headline {
         font-size: 2rem;
     }
     .c-box-more-news .c-box-news figure {
@@ -191,8 +190,7 @@ h1, h2, h3, h4, h5 , h6 {
     .c-box-news__related .row {
         gap: 0.75rem;
     }
-    .c-emphasis.var-two .c-box-news__title--headline,
-    .c-emphasis.var-five .c-box-news__title--headline {
+    .c-box-news--headline .c-box-news__title.c-box-news__title--headline {
         font-size: 1.75rem;
     }
     .c-emphasis.var-five .c-box-news__title--related {
