@@ -95,13 +95,6 @@ h1, h2, h3, h4, h5 , h6 {
     height: 100%;
     object-fit: cover;
 }
-.c-box-more-news .c-box-news .c-box-news__title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-}
 /*======== /Destaque - Var 2 ========*/
 
 /*======== Destaque - Var 5 ========*/
